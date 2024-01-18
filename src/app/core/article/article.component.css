@@ -1,0 +1,25 @@
+    #container {
+        margin-top: 100px;
+        background-color: #e6fdee;
+    }
+
+    #title {
+        text-align: center;
+        width: 80%;
+        padding-top: 5px;
+        margin-left: 10%;
+    }
+
+    #complete-article {
+        width: 96%;
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    #metadata-article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
