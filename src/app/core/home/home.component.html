@@ -1,9 +1,7 @@
 <section id="container">
     <div id="all-cards">
-        <a 
-            *ngFor="let item of items | keyvalue; let i = index"
-            [href]="'article/'+i">
-            <div class="card" >
+        <a *ngFor="let item of items | keyvalue; let i = index" [href]="'/article/' + i">
+            <div class="card">
                 <h2>{{ item.key | slice:0:12 }}{{ item.key.length > 12 ? '...' : '' }}</h2>
                 <h3>{{ item.value | slice:0:206 }}{{ item.value.length > 206 ? '...' : '' }}</h3>
             </div>
