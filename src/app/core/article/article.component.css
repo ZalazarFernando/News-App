@@ -20,6 +20,7 @@
 
     #text-article {
         width: 96%;
+        min-height: 400px;
         margin-left: 20px;
         padding-bottom: 20px;
     }
@@ -41,11 +42,17 @@
     }
 
     #options:hover {
-        width: 1000px;
+        width: 1200px;
     }
 
     #comments-block {
         margin-left: 20px;
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+
+    #comments-block::-webkit-scrollbar-thumb {
+        background-color: #e6fdee;
     }
 
     .one-comment {
@@ -76,8 +83,8 @@
         box-shadow: 0 8px 5px rgb(0, 0, 0, 0.5);
         height: 40px;
         transition: all 0.3s ease;
-      }
-    
-      button:hover {
-        margin-top: 5px;
-      }
+    }
+
+    button:hover {
+    margin-top: 5px;
+    }

@@ -62,16 +62,15 @@
         (mouseleave)="hideComments()">
 
         <div 
-            id="comments-block" 
-            [style.display]="flag_comments ? 'block' : 'none'">
-
-            <div 
             id="input-and-btn-comments"
             style="display: flex">
 
                 <input type="text" [(ngModel)]="new_comment"/>
                 <button type="button">Comentar</button>
-            </div>
+        </div>
+        <div 
+            id="comments-block" 
+            [style.display]="flag_comments ? 'block' : 'none'">
             
             <div class="one-comment" *ngFor="let comment of comments | keyvalue;">
                 <h2>{{ comment.key }}</h2>
