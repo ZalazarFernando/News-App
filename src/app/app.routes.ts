@@ -15,11 +15,11 @@ export const routes: Routes = [
         component: ArticleComponent
     },
     {
-        path: 'about-us/',
+        path: 'about-us',
         component: AboutUsComponent
     },
     {
-        path: 'contact-us/',
+        path: 'contact-us',
         component: ContactUsComponent
     }
 ];
